@@ -16,7 +16,7 @@ public class MovieService {
         return repository.findAll();
     }
 
-    public Optional<Movies> signleMovies(ObjectId id){
-        return repository.findById(id);
+    public Optional<Movies> signleMovies(String imdbId){
+        return repository.findByimdbId(imdbId);
     }
 }
